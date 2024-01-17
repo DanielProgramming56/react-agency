@@ -26,6 +26,25 @@ a {
   background-color: rgba(70, 77, 122, 0.712);
 }
 
+.boxShadow {
+  -webkit-box-shadow: 3px 17px 13px -3px rgba(140, 140, 140, 0.56);
+  -moz-box-shadow: 3px 17px 13px -3px rgba(140, 140, 140, 0.56);
+  box-shadow: 3px 17px 13px -3px rgba(140, 140, 140, 0.56);
+}
+
+.boxShadowCircle{
+  -webkit-box-shadow: 3px -7px 43px -10px rgba(10,28,143,0.42);
+-moz-box-shadow: 3px -7px 43px -10px rgba(10,28,143,0.42);
+box-shadow: 3px -7px 43px -10px rgba(10,28,143,0.42);
+}
+
+.boxShadowCircle:hover{
+  box-shadow: none;
+}
+
+.custom-icon-color{
+  color: rgb(121, 140, 252);
+}
+
 @media screen and (max-height: 1024px) {
- 
 }

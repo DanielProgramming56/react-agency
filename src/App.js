@@ -7,6 +7,7 @@ import { themeSettings } from 'theme';
 import MiddleMan from 'utils/MiddleMan';
 import Aos from 'aos';
 import ContactPage from 'Pages/ContactPage';
+import HomePage from 'Pages/HomePage';
 function App() {
   const [mode, setMode] = useState('light')
   const theme = useMemo(() => createTheme(themeSettings(mode)), [mode])
@@ -19,7 +20,7 @@ function App() {
           <CssBaseline />
           <MiddleMan />
           <Routes>
-            <Route path='/home' element={"Hello world"} />
+            <Route path='/' element={<HomePage />} />
             <Route path='/contact' element={<ContactPage/>} />
           </Routes>
         </ThemeProvider>

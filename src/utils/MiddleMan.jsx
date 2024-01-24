@@ -17,7 +17,7 @@ const MiddleMan = () => {
   let heightSize = "";
   if ("/" === pathname) {
     intoContent =
-      "A Versatile Powerhouse for WordPress, SEO, Social Media, and More";
+      "A Versatile Powerhouse for Web Design, SEO, Social Media, and More";
     keyWord = "Revolutionize Your Digital Presence with Speed and Precision";
     description =
       "Digital Plus Agency, the all-in-one solution for a dynamic online presence – We empower your business to navigate the digital landscape with unmatched speed and precision.";

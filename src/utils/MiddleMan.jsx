@@ -70,7 +70,7 @@ const MiddleMan = () => {
     <Box
       className="middleman-bg"
       sx={{
-        height: isLowWidth ? "50vh" : `${heightSize}`,
+        height: heightSize,
         backgroundImage:  `url(${bgImage})`
       }}
     >

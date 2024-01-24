@@ -36,7 +36,7 @@ const HomeAboutUs = () => {
                     width: isMobileScreen ? "100%" : "90%"
                 }}>
                     <span style={{color: "rgb(121, 140, 252)", fontWeight: "bold",
-                    fontSize: "1em",}}>Pixel Harbor</span> is  a Top Global Digital Marketing Agency.
+                    fontSize: "1em",}}>Digital Plus</span> is  a Top Global Digital Marketing Agency.
                 </Typography>
                 <Typography sx={{
                     color: "black",
@@ -46,7 +46,7 @@ const HomeAboutUs = () => {
                     width: isMobileScreen ? "100%" : "90%",
                     fontWeight: "light"
                 }}>
-                    Pixel Harbor offer's  a complete platform of digital marketing services designed to provide options for businesses of every size and structure. We saw that many businesses faced the problem of seeking out multiple agencies to fulfill their various needs when they simply weren't getting results from one strategy to the next.
+                    Digital Plus offer's  a complete platform of digital marketing services designed to provide options for businesses of every size and structure. We saw that many businesses faced the problem of seeking out multiple agencies to fulfill their various needs when they simply weren't getting results from one strategy to the next.
                 </Typography>
                 <Typography sx={{
                     color: "black",

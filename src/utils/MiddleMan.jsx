@@ -9,7 +9,7 @@ import bgImage2 from "../assets/pexels-mikhail-nilov-9301314.jpg"
 import bgImage3 from "../assets/pexels-lukas-669619.jpg"
 const MiddleMan = () => {
   const { pathname } = useLocation();
-  const isLowHeight = useMediaQuery("(max-height: 740px)");
+  const isLowWidth = useMediaQuery("(max-width: 1000px)");
   let intoContent = "";
   let keyWord = "";
   let description = "";
@@ -24,7 +24,7 @@ const MiddleMan = () => {
       "A Versatile Powerhouse for WordPress, SEO, Social Media, and More";
     keyWord = "Revolutionize Your Digital Presence with Speed and Precision";
     description =
-      "Pixel Harbor Agency, the all-in-one solution for a dynamic online presence – We empower your business to navigate the digital landscape with unmatched speed and precision.";
+      "Digital Plus Agency, the all-in-one solution for a dynamic online presence – We empower your business to navigate the digital landscape with unmatched speed and precision.";
     buttonContent = "Get Started";
     bgImage = bgImage1;
     heightSize = "80vh";
@@ -70,7 +70,7 @@ const MiddleMan = () => {
     <Box
       className="middleman-bg"
       sx={{
-        height: isLowHeight ? "100vh" : `${heightSize}`,
+        height: isLowWidth ? "50vh" : `${heightSize}`,
         backgroundImage:  `url(${bgImage})`
       }}
     >

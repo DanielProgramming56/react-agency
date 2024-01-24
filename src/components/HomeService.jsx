@@ -42,7 +42,7 @@ const HomeService = () => {
             fontFamily: "Poppins",
             fontSize: "14px",
         }}>
-          Pixel Harbor offers a complete platform of digital marketing
+          Digital Plus offers a complete platform of digital marketing
           services. Instead of searching for multiple companies to deliver
           high-quality projects, learn how our unified team of experts delivers
           comprehensive marketing services that synergic and deliver

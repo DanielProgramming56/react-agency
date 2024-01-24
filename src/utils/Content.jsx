@@ -3,22 +3,23 @@ import { Box, Typography } from "@mui/material";
 import { useMediaQuery } from "@mui/material";
 import { useParams, useLocation, Link } from "react-router-dom";
 const Content = ({ intoContent, keyWord, description, buttonContent }) => {
-  const isNoneMobileScreen = useMediaQuery("(min-width: 1000px)");
+  const isMobileScreen = useMediaQuery("(max-width: 1000px)");
 
   const memoizedContent = useMemo(() => {
     return (
       <Box
         sx={{
-          margin: isNoneMobileScreen ? "10em 50px 0px 50px" : "5em 5px 0px 5px",
+          margin: isMobileScreen ? "5em 5px 0px 5px" : "10em 50px 0px 50px",
           display: "flex",
           flexDirection: "column",
-          padding: isNoneMobileScreen ? "20px" : "10px",
+          padding: isMobileScreen ?  "10px" : "20px",
           alignItems: "center",
+          gap: isMobileScreen ? "5px" : "10px"
         }}
       >
         <Typography
           sx={{
-            fontSize: isNoneMobileScreen ? "1.1em" : "1em",
+            fontSize: isMobileScreen ?  "1em" : "1.1em",
             fontWeight: "700",
             fontFamily: "Poppins",
             textAlign: "center",
@@ -28,10 +29,10 @@ const Content = ({ intoContent, keyWord, description, buttonContent }) => {
         </Typography>
         <Typography
           sx={{
-            fontSize: isNoneMobileScreen ? "2.5em" : "2em",
+            fontSize: isMobileScreen ?  "2em" : "2.5em" ,
             fontWeight: "900",
             fontFamily: "Poppins",
-            width: isNoneMobileScreen ? "50%" : "100%",
+            width: isMobileScreen ? "100%" : "50%",
             textAlign: "center",
             lineHeight: "47px",
           }}
@@ -40,10 +41,10 @@ const Content = ({ intoContent, keyWord, description, buttonContent }) => {
         </Typography>
         <Typography
           sx={{
-            fontSize: isNoneMobileScreen ? "0.89em" : "12px",
-            fontWeight: isNoneMobileScreen ? "400" : "",
+            fontSize: isMobileScreen ?  "12px" : "0.89em",
+            fontWeight: isMobileScreen ? "400" : "",
             fontFamily: "Poppins",
-            width: isNoneMobileScreen ? "30%" : "95%",
+            width: isMobileScreen ?  "95%" : "30%" ,
             textAlign: "center",
             marginBottom: "10px",
           }}
@@ -53,7 +54,7 @@ const Content = ({ intoContent, keyWord, description, buttonContent }) => {
         {buttonContent && <Link to={"/contact"}>
           <button
             style={{
-              width: isNoneMobileScreen ? "20vw" : "100%",
+              width: isMobileScreen ? "100%" : "20vw",
             }}
           >
             {" "}

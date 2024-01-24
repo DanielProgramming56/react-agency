@@ -204,7 +204,7 @@ const HomePortfolio = () => {
                 fontFamily: "Poppins",
               }}
             >
-              Pixel Harbour will take your business{" "}
+              Digital Plus will take your business{" "}
               <span
                 style={{
                   color: isMobileScreen ? "black" : "rgb(121, 140, 252)",

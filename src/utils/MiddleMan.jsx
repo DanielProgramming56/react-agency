@@ -71,6 +71,12 @@ const MiddleMan = () => {
     >
       <Box className="overlay">
         <Navbar />
+        <Box sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: 'center',
+          height: "80%"
+        }}>
         <Content
           intoContent={intoContent}
           description={description}
@@ -78,6 +84,7 @@ const MiddleMan = () => {
           buttonContent={buttonContent}
           bgImage={bgImage}
         />
+        </Box>
       </Box>
     </Box>
   );

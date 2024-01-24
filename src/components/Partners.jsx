@@ -10,23 +10,24 @@ import Allianz from "../assets/pngwing.com.png";
 //"rgb(249,249,249)"
 const Partners = () => {
   const isMobileScreen = useMediaQuery("(max-width: 1000px)");
-  const SmallScreenHeight = useMediaQuery("(max-height: 896px)");
   return (
     <Box
       sx={{
-        height: SmallScreenHeight ?  "50vh" : "33vh" ,
+        // height: isMobileScreen ?  "50vh" : "40vh" ,
         display: "flex",
         width: "100vw",
         justifyContent: "center",
         marginTop: "20px",
-        padding: "20px"
+        padding: "20px",
+        alignItems: "center"
+        
       }}
       >
       <Box
         sx={{
           
           width: isMobileScreen ? "100vw" : "80%",
-          height: SmallScreenHeight ? "40vh" : "30vh",
+          // height: isMobileScreen ? "40vh" : "30vh",
           borderRadius: isMobileScreen ? "0px" : "20px",
           ":hover": isMobileScreen
             ? ""
@@ -65,7 +66,7 @@ const Partners = () => {
           <img
             className="bounce-image"
             style={{
-              width: SmallScreenHeight ? "120px" : "150px",
+              width: isMobileScreen ? "120px" : "150px",
             }}
             src={HubSpot}
             alt="Hubspot Logo"
@@ -75,14 +76,14 @@ const Partners = () => {
           <Shopee
             className="bounce-image"
             style={{
-              width: SmallScreenHeight ? "50px" : "60px",
+              width: isMobileScreen ? "50px" : "60px",
             }}
           />
 
           <img
             className="bounce-image"
             style={{
-              width: SmallScreenHeight ? "100px" : "150px",
+              width: isMobileScreen ? "100px" : "150px",
             }}
             src={GoPay}
             alt="Go Pay Logo"
@@ -92,7 +93,7 @@ const Partners = () => {
           <img
             className="bounce-image"
             style={{
-              width: SmallScreenHeight ? "100px" : "150px",
+              width: isMobileScreen ? "100px" : "150px",
             }}
             src={Fassai}
             alt="Fassai Logo"
@@ -101,7 +102,7 @@ const Partners = () => {
           <img
             className="bounce-image"
             style={{
-              width: SmallScreenHeight ? "60px" : "100px",
+              width: isMobileScreen ? "60px" : "100px",
             }}
             src={GooglePartner}
             alt="GooglePartner Logo"
@@ -111,7 +112,7 @@ const Partners = () => {
           <img
             className="bounce-image"
             style={{
-              width: SmallScreenHeight ? "100px" : "150px",
+              width: isMobileScreen ? "100px" : "150px",
             }}
             src={Allianz}
             alt="Allianz Logo"

@@ -10,6 +10,7 @@ import {
   useTheme,
   useMediaQuery,
   Button,
+  Menu,
 } from "@mui/material";
 import { Link } from "react-router-dom";
 import { blue } from "@mui/material/colors";
@@ -72,7 +73,11 @@ const Navbar = () => {
             <button>REQUEST QUOTE</button>
           </Box>
         )}
-        {!isNoneMobileScreen && <button>Menu</button>}
+        {!isNoneMobileScreen && (
+          <IconButton>
+            <Menu/>
+          </IconButton>
+        )}
       </Box>
     </Box>
   );

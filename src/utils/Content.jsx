@@ -9,12 +9,12 @@ const Content = ({ intoContent, keyWord, description, buttonContent }) => {
     return (
       <Box
         sx={{
-          margin: isMobileScreen ? "5em 5px 0px 5px" : "10em 50px 0px 50px",
           display: "flex",
           flexDirection: "column",
           padding: isMobileScreen ?  "10px" : "20px",
           alignItems: "center",
-          gap: isMobileScreen ? "5px" : "10px"
+          justifyContent: "center",
+          gap: "5px"
         }}
       >
         <Typography
@@ -29,12 +29,12 @@ const Content = ({ intoContent, keyWord, description, buttonContent }) => {
         </Typography>
         <Typography
           sx={{
-            fontSize: isMobileScreen ?  "2em" : "2.5em" ,
+            fontSize: isMobileScreen ?  "1.5em" : "2.3em" ,
             fontWeight: "900",
             fontFamily: "Poppins",
-            width: isMobileScreen ? "100%" : "50%",
+            width: isMobileScreen ? "100%" : "70%",
             textAlign: "center",
-            lineHeight: "47px",
+            lineHeight: "40px"
           }}
         >
           {keyWord}
@@ -44,7 +44,7 @@ const Content = ({ intoContent, keyWord, description, buttonContent }) => {
             fontSize: isMobileScreen ?  "12px" : "0.89em",
             fontWeight: isMobileScreen ? "400" : "",
             fontFamily: "Poppins",
-            width: isMobileScreen ?  "95%" : "30%" ,
+            width: isMobileScreen ?  "95%" : "50%" ,
             textAlign: "center",
             marginBottom: "10px",
           }}

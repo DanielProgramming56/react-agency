@@ -171,7 +171,7 @@ const HomePortfolio = () => {
       <Box
         sx={{
           background: "rgb(121, 140, 252)",
-          height: "15vh",
+          height: "30vh",
           display: "flex",
           justifyContent: "center",
           position: "relative",
@@ -186,7 +186,7 @@ const HomePortfolio = () => {
             padding: "20px",
             borderRadius: "5px",
             display: "flex",
-            height: isMobileScreen ? "30vh" : "20vh",
+            height: isMobileScreen ? "40vh" : "30vh",
             justifyContent: "center",
             alignItems: "center",
             gap: isMobileScreen ? "10px" : "40px",
@@ -194,7 +194,7 @@ const HomePortfolio = () => {
             boxShadow: "-1px 9px 11px -6px rgba(61,61,61,0.59)"
           }}
         >
-          <Box >
+          <Box>
             <Typography
               sx={{
                 color: "black",

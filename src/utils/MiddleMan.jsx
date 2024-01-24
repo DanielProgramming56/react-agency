@@ -4,21 +4,17 @@ import React from "react";
 import Content from "./Content";
 import { useMediaQuery } from "@mui/material";
 import { useLocation } from "react-router-dom";
-import bgImage1 from "../assets/pexels-darlene-alderson-7970846.jpg"
-import bgImage2 from "../assets/pexels-mikhail-nilov-9301314.jpg"
-import bgImage3 from "../assets/pexels-lukas-669619.jpg"
+import bgImage1 from "../assets/pexels-darlene-alderson-7970846.jpg";
+import bgImage2 from "../assets/pexels-mikhail-nilov-9301314.jpg";
+import bgImage3 from "../assets/pexels-lukas-669619.jpg";
 const MiddleMan = () => {
   const { pathname } = useLocation();
-  const isLowWidth = useMediaQuery("(max-width: 1000px)");
   let intoContent = "";
   let keyWord = "";
   let description = "";
   let buttonContent = "";
   let bgImage = "";
   let heightSize = "";
-
-  console.log(pathname);
-
   if ("/" === pathname) {
     intoContent =
       "A Versatile Powerhouse for WordPress, SEO, Social Media, and More";
@@ -28,30 +24,29 @@ const MiddleMan = () => {
     buttonContent = "Get Started";
     bgImage = bgImage1;
     heightSize = "80vh";
-
   }
-  if ('/contact' == pathname) {
+  if ("/contact" == pathname) {
     keyWord = "Contact Us";
     description =
       "Have questions? Want to get your personalized plan? Be sure to contact us today using the contact information available below.";
-      heightSize = "50vh";
+    heightSize = "50vh";
   }
   let whoWeHelp;
-
-  if ('/who-we-help' == pathname)
-  {
+  
+  if ("/who-we-help" == pathname) {
     keyWord = "Who We Help";
-    description = "Our team assists a variety of businesses from small, entrepreneurial startups to large-scale established corporations. Take a look and see how you can benefit from our plans!";
-    buttonContent = ""
+    description =
+      "Our team assists a variety of businesses from small, entrepreneurial startups to large-scale established corporations. Take a look and see how you can benefit from our plans!";
+    buttonContent = "";
     bgImage = bgImage2;
     heightSize = "50vh";
   }
   let about;
 
-  if ("/about-us" == pathname)
-  {
-    keyWord = "About Pixel Harbor"
-    description = "Get to know about the team at Business Name. Discover what makes our digital marketing experts different from the competition."
+  if ("/about-us" == pathname) {
+    keyWord = "About Pixel Harbor";
+    description =
+      "Get to know about the team at Business Name. Discover what makes our digital marketing experts different from the competition.";
     bgImage = bgImage3;
     heightSize = "50vh";
   }
@@ -71,7 +66,7 @@ const MiddleMan = () => {
       className="middleman-bg"
       sx={{
         height: heightSize,
-        backgroundImage:  `url(${bgImage})`
+        backgroundImage: `url(${bgImage})`,
       }}
     >
       <Box className="overlay">

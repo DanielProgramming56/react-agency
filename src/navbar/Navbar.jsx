@@ -11,19 +11,12 @@ import {
   useMediaQuery,
   Button,
 } from "@mui/material";
-import logo from "../assets/Asset 4.svg";
 import { Link } from "react-router-dom";
 import { blue } from "@mui/material/colors";
 const Navbar = () => {
   const [isMobileMenuToggle, setIsMobileMenuToggle] = useState(false);
   const isNoneMobileScreen = useMediaQuery("(min-width: 1000px)");
 
-  const theme = useTheme();
-  const neutralLight = theme.palette.neutral.light;
-  const dark = theme.palette.neutral.dark;
-  const background = theme.palette.background.default;
-  const primaryLight = theme.palette.primary.light;
-  const alt = theme.palette.background.alt;
 
   return (
     <Box
@@ -52,15 +45,14 @@ const Navbar = () => {
             }}
           >
             
-            PIXEL{" "}
-            <span
+            Digital<span
               style={{
                 fontSize: "1em",
                 fontWeight: "900",
                 color: "rgb(121, 140, 252)",
               }}
             >
-              HARBOR
+              Plus
             </span>
           </Typography>
         </Link>
@@ -71,10 +63,11 @@ const Navbar = () => {
               padding: "30px",
             }}
           >
-            <Link>Home</Link>
-            <Link>About</Link>
+            <Link to="/">Home</Link>
+            <Link to="who-we-help">Who We Help</Link>
+            <Link to="/about-us">About</Link>
             <Link>Services</Link>
-            <Link>Contact</Link>
+            <Link to="/contact">Contact</Link>
 
             <button>REQUEST QUOTE</button>
           </Box>

@@ -88,7 +88,8 @@ const SetHomeBox = () => {
         display: "flex",
         gap: "70px",
         flexWrap: "wrap",
-        justifyContent: "center"
+        justifyContent: "center",
+        marginTop: "30px"
     }}>
       {
         boxDate.map((data, idx) => (

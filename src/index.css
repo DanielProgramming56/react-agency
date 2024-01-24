@@ -4,6 +4,7 @@
   font-size: 16px;
   color: #f7f5f5;
   font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
 }
 
 body{
@@ -37,11 +38,12 @@ button{
   font-family: "Poppins", sans-serif;
   font-size: 1em;
   border-radius: 10px;
-  transition: ease-in .2s linear;
+  transform: translate(0px, 0px);
+  transition: background-color 164ms ease-out 79ms;
   text-transform: uppercase;
   cursor: pointer;
 }
 
 button:hover{
-  opacity: .8;
+  background-color: rgba(122, 201, 250, 1);
 }

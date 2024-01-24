@@ -10,7 +10,7 @@ const HomeAboutUs = () => {
             marginTop: "30px",
             display: 'flex',
             justifyContent: "center",
-            padding: isMobileScreen ? "10px" : "180px",
+            padding: isMobileScreen ? "30px 20px" : " 50px 150px",
             alignItems: "center",
         }}>
             <Box sx={{flex: !isMobileScreen ? 2 : ""}}>
@@ -36,7 +36,7 @@ const HomeAboutUs = () => {
                     width: isMobileScreen ? "100%" : "90%"
                 }}>
                     <span style={{color: "rgb(121, 140, 252)", fontWeight: "bold",
-                    fontSize: "1em",}}>Pixel Harbor</span> is  a Top Global Marketing Agency.
+                    fontSize: "1em",}}>Pixel Harbor</span> is  a Top Global Digital Marketing Agency.
                 </Typography>
                 <Typography sx={{
                     color: "black",
@@ -69,7 +69,7 @@ const HomeAboutUs = () => {
             }}>
                 <img style={{
                     width: "30vw"
-                }} src={salesPersonImg} alt='salesPersonImg' />
+                }} src={salesPersonImg} alt='salesPersonImg' loading='lazy' />
             </Box>}
         </Box>
     );

@@ -1,9 +1,9 @@
 import { Box } from "@mui/material";
 import React from "react";
 import ServicesWidget from "./ServicesWidget";
-import seoImage from "/home/danielchidebere/Documents/PIXEL/eng/react-agency/src/assets/pexels-tobias-dziuba-942331.jpg"
-import googleAds from "/home/danielchidebere/Documents/PIXEL/eng/react-agency/src/assets/pexels-lisa-fotios-16368540.jpg"
-import fb from "/home/danielchidebere/Documents/PIXEL/eng/react-agency/src/assets/pexels-tracy-le-blanc-607812.jpg"
+import seoImage from "../assets/pexels-tobias-dziuba-942331.jpg"
+import googleAds from "../assets/pexels-lisa-fotios-16368540.jpg"
+import fb from "../assets/pexels-tracy-le-blanc-607812.jpg"
 const data = [
   {
     title: "SEO",

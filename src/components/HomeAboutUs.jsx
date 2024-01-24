@@ -1,7 +1,7 @@
 import { Box, Typography } from '@mui/material';
 import React from 'react';
 import { useMediaQuery } from "@mui/material";
-import salesPersonImg  from "/home/danielchidebere/Documents/PIXEL/eng/react-agency/src/assets/pexels-linkedin-sales-navigator-7245806.jpg"
+import salesPersonImg  from "../assets/pexels-linkedin-sales-navigator-7245806.jpg"
 import { Link } from 'react-router-dom';
 const HomeAboutUs = () => {
     const isMobileScreen = useMediaQuery("(max-width: 1000px)");
